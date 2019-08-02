@@ -1,7 +1,7 @@
 read_data <- function() {
   filename <- "household_power_consumption.txt"
   #Skipping to the first  row of the desired date and then reading only the 
-  #desired number of rows
+  #desired number of rows to read 
   skiplines<- grep("1/2/2007", readLines(filename))
   
   PowerData <- read.table(filename,skip=skiplines-1,nrows=2880,

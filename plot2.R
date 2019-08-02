@@ -1,5 +1,5 @@
 source("read_data.R")
-
+#plot 2
 plot2 <- function(data=NULL) {
   pwrData <- read_data()
   
